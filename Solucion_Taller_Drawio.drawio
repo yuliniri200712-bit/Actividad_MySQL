@@ -1,0 +1,143 @@
+<mxfile host="app.diagrams.net" modified="2026-09-11T00:00:00.000Z" agent="Claude" version="24.0.0" type="device">
+  <diagram id="er-hospital-3fn" name="ER Hospital 3FN">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- codigos_postales -->
+        <mxCell id="tbl_cp" value="codigos_postales" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cp_row1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_cp">
+          <mxGeometry y="30" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cp_c1" value="PK  Codigo_Postal" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=4;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="cp_row1">
+          <mxGeometry width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cp_row2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_cp">
+          <mxGeometry y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cp_c2" value="     Paciente_Ciudad" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="cp_row2">
+          <mxGeometry width="240" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- pacientes -->
+        <mxCell id="tbl_pac" value="pacientes" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_row1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_pac">
+          <mxGeometry y="30" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_c1" value="PK  Paciente_DNI" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=4;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="pac_row1">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_row2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_pac">
+          <mxGeometry y="60" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_c2" value="     Paciente_NombreCompleto" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="pac_row2">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_row3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_pac">
+          <mxGeometry y="90" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_c3" value="     Paciente_Direccion" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="pac_row3">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_row4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_pac">
+          <mxGeometry y="120" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_c4" value="FK  Codigo_Postal" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=2;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="pac_row4">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- paciente_telefonos -->
+        <mxCell id="tbl_tel" value="paciente_telefonos" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tel_row1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_tel">
+          <mxGeometry y="30" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tel_c1" value="PK  ID_Telefono" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=4;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="tel_row1">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tel_row2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_tel">
+          <mxGeometry y="60" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tel_c2" value="FK  Paciente_DNI" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=2;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="tel_row2">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tel_row3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_tel">
+          <mxGeometry y="90" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tel_c3" value="     Telefono" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="tel_row3">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- medicos -->
+        <mxCell id="tbl_med" value="medicos" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="780" y="40" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="med_row1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_med">
+          <mxGeometry y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="med_c1" value="PK  ID_Medico" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=4;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="med_row1">
+          <mxGeometry width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="med_row2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_med">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="med_c2" value="     Medico_Registro" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="med_row2">
+          <mxGeometry width="250" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ingresos -->
+        <mxCell id="tbl_ing" value="ingresos" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="780" y="250" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ing_row1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_ing">
+          <mxGeometry y="30" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ing_c1" value="PK  ID_Ingreso" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=4;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="ing_row1">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ing_row2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_ing">
+          <mxGeometry y="60" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ing_c2" value="     Fecha_Hora_Ingreso" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="ing_row2">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ing_row3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_ing">
+          <mxGeometry y="90" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ing_c3" value="FK  Paciente_DNI" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=2;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="ing_row3">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ing_row4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="tbl_ing">
+          <mxGeometry y="120" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ing_c4" value="FK  ID_Medico" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=2;align=left;spacingLeft=6;overflow=hidden;portConstraint=eastwest;points=[[0,0.5],[1,0.5]];" vertex="1" parent="ing_row4">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Relaciones (Crow's Foot: uno -> muchos) -->
+        <mxCell id="rel1" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.25;" edge="1" parent="1" source="tbl_cp" target="tbl_pac">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel2" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="tbl_pac" target="tbl_tel">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel3" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=1;exitY=0.75;entryX=0;entryY=0.25;" edge="1" parent="1" source="tbl_pac" target="tbl_ing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel4" style="edgeStyle=entityRelationEdgeStyle;rounded=0;html=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="tbl_med" target="tbl_ing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
