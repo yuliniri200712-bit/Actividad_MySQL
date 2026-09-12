@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-09-11T00:00:00.000Z" agent="Claude" version="24.0.0" type="device">
+  <diagram name="Diagrama E-R - Tienda de Ropa" id="er-tienda-ropa">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ================= ENTIDADES ================= -->
+        <mxCell id="ent_categoria" value="CATEGORIA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DCE6F1;strokeColor=#000000;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ent_producto" value="PRODUCTO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DCE6F1;strokeColor=#000000;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="400" y="280" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ent_venta" value="VENTA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DCE6F1;strokeColor=#000000;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="800" y="280" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ent_cliente" value="CLIENTE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DCE6F1;strokeColor=#000000;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="800" y="560" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ent_detalle" value="DETALLE_VENTA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DCE6F1;strokeColor=#000000;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="560" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- ================= RELACIONES (ROMBOS) ================= -->
+        <mxCell id="rel_tiene" value="tiene" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FDE9D9;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="290" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel_incluye" value="incluye" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FDE9D9;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="660" y="440" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel_realiza" value="realiza" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FDE9D9;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="850" y="440" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ================= ATRIBUTOS: CATEGORIA ================= -->
+        <mxCell id="attr_cat_id" value="id" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_cat_nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="160" y="180" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ================= ATRIBUTOS: PRODUCTO ================= -->
+        <mxCell id="attr_prod_id" value="id" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="380" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_prod_nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="480" y="180" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_prod_precio" value="precio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="380" y="400" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_prod_existencia" value="existencia" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="490" y="400" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ================= ATRIBUTOS: VENTA ================= -->
+        <mxCell id="attr_venta_id" value="id" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="780" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_venta_fecha" value="fecha" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="880" y="180" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ================= ATRIBUTOS: CLIENTE ================= -->
+        <mxCell id="attr_cli_id" value="id" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="780" y="680" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_cli_correo" value="correo" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="880" y="680" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ================= ATRIBUTOS: DETALLE_VENTA ================= -->
+        <mxCell id="attr_det_cantidad" value="cantidad" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="580" y="680" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ================= LINEAS ENTIDAD-ATRIBUTO ================= -->
+        <mxCell id="e1" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_categoria" target="attr_cat_id"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_categoria" target="attr_cat_nombre"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="e3" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_producto" target="attr_prod_id"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_producto" target="attr_prod_nombre"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e5" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_producto" target="attr_prod_precio"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e6" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_producto" target="attr_prod_existencia"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="e7" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_venta" target="attr_venta_id"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e8" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_venta" target="attr_venta_fecha"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="e9" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_cliente" target="attr_cli_id"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e10" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_cliente" target="attr_cli_correo"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="e11" style="endArrow=none;html=1;" edge="1" parent="1" source="ent_detalle" target="attr_det_cantidad"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ================= LINEAS ENTIDAD-RELACION CON CARDINALIDAD ================= -->
+        <mxCell id="r1" value="1" style="endArrow=none;html=1;fontSize=12;fontStyle=1;fontColor=#0000FF;" edge="1" parent="1" source="ent_categoria" target="rel_tiene"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="r2" value="N" style="endArrow=none;html=1;fontSize=12;fontStyle=1;fontColor=#0000FF;" edge="1" parent="1" source="rel_tiene" target="ent_producto"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="r3" value="N" style="endArrow=none;html=1;fontSize=12;fontStyle=1;fontColor=#0000FF;" edge="1" parent="1" source="ent_producto" target="rel_incluye"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="r4" value="M" style="endArrow=none;html=1;fontSize=12;fontStyle=1;fontColor=#0000FF;" edge="1" parent="1" source="rel_incluye" target="ent_venta"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="r5" style="endArrow=none;html=1;" edge="1" parent="1" source="rel_incluye" target="ent_detalle"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="r6" value="1" style="endArrow=none;html=1;fontSize=12;fontStyle=1;fontColor=#0000FF;" edge="1" parent="1" source="ent_venta" target="rel_realiza"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="r7" value="N" style="endArrow=none;html=1;fontSize=12;fontStyle=1;fontColor=#0000FF;" edge="1" parent="1" source="rel_realiza" target="ent_cliente"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
